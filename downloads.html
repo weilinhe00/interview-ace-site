@@ -16,7 +16,6 @@
 </head>
 <body>
 
-<!-- ============= Header ============= -->
 <header class="site-header">
   <div class="container bar">
     <a class="brand" href="index.html" aria-label="Interview ACE home">
@@ -31,16 +30,17 @@
         <small>AI · CAREER · INTERVIEW</small>
       </span>
     </a>
+    <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="nav">
       <a href="index.html">Overview</a>
-      <a href="index.html#features">Features</a>
       <a href="ui.html">UI Gallery</a>
-      <a href="downloads.html" class="cta active">Resources</a>
+      <a href="downloads.html" class="active">Resources</a>
     </nav>
   </div>
 </header>
 
-<!-- ============= Page head ============= -->
 <section class="page-head">
   <div class="container">
     <div class="crumbs">RESOURCES</div>
@@ -49,13 +49,11 @@
   </div>
 </section>
 
-<!-- ============= Downloads ============= -->
 <section style="padding-top:48px;">
   <div class="container">
 
     <div class="download-grid">
 
-      <!-- Source code (external link, no zip) -->
       <div class="dl-card">
         <div class="head">
           <div class="icon-wrap">
@@ -71,14 +69,13 @@
         </div>
         <p>The complete Interview ACE codebase lives on GitHub. Browse the files, follow the commit history, or clone the repo to run it locally.</p>
         <div class="foot">
-          <a class="btn btn-primary" href="https://github.com/your-username/interview-ace" target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://github.com/weilinhe00/interview-ace" target="_blank" rel="noopener">
             Open on GitHub
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
           </a>
         </div>
       </div>
 
-      <!-- Install guide -->
       <div class="dl-card">
         <div class="head">
           <div class="icon-wrap">
@@ -102,7 +99,6 @@
         </div>
       </div>
 
-      <!-- Brochure -->
       <div class="dl-card">
         <div class="head">
           <div class="icon-wrap">
@@ -124,7 +120,6 @@
         </div>
       </div>
 
-      <!-- Product overview -->
       <div class="dl-card">
         <div class="head">
           <div class="icon-wrap">
@@ -145,7 +140,6 @@
         </div>
       </div>
 
-      <!-- UI Gallery link -->
       <div class="dl-card">
         <div class="head">
           <div class="icon-wrap">
@@ -182,7 +176,6 @@
   </div>
 </section>
 
-<!-- ============= Footer ============= -->
 <footer class="site-footer">
   <div class="container">
     <div class="row">
@@ -197,7 +190,6 @@
       </a>
       <nav>
         <a href="index.html">Overview</a>
-        <a href="index.html#features">Features</a>
         <a href="ui.html">UI Gallery</a>
         <a href="downloads.html">Resources</a>
       </nav>
@@ -208,5 +200,6 @@
   </div>
 </footer>
 
+<script src="nav.js" defer></script>
 </body>
 </html>

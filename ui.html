@@ -30,11 +30,13 @@
         <small>AI · CAREER · INTERVIEW</small>
       </span>
     </a>
+    <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="nav">
       <a href="index.html">Overview</a>
-      <a href="index.html#features">Features</a>
       <a href="ui.html" class="active">UI Gallery</a>
-      <a href="downloads.html" class="cta">Resources</a>
+      <a href="downloads.html">Resources</a>
     </nav>
   </div>
 </header>
@@ -47,7 +49,6 @@
   </div>
 </section>
 
-<!-- Onboarding -->
 <section class="gallery-section">
   <div class="container">
     <div class="cat-head">
@@ -70,7 +71,6 @@
   </div>
 </section>
 
-<!-- AI Resume -->
 <section class="gallery-section">
   <div class="container">
     <div class="cat-head">
@@ -91,7 +91,6 @@
   </div>
 </section>
 
-<!-- AI Interviewer -->
 <section class="gallery-section">
   <div class="container">
     <div class="cat-head">
@@ -113,7 +112,6 @@
   </div>
 </section>
 
-<!-- HR Practice -->
 <section class="gallery-section">
   <div class="container">
     <div class="cat-head">
@@ -137,7 +135,6 @@
   </div>
 </section>
 
-<!-- Community -->
 <section class="gallery-section">
   <div class="container">
     <div class="cat-head">
@@ -159,7 +156,6 @@
   </div>
 </section>
 
-<!-- ============= Lightbox ============= -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
   <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
@@ -182,7 +178,6 @@
       </a>
       <nav>
         <a href="index.html">Overview</a>
-        <a href="index.html#features">Features</a>
         <a href="ui.html">UI Gallery</a>
         <a href="downloads.html">Resources</a>
       </nav>
@@ -202,8 +197,6 @@
   const lbPrev = document.getElementById('lbPrev');
   const lbNext = document.getElementById('lbNext');
 
-  // Flatten all images across groups into a single sequence,
-  // but remember each one's group for the counter label.
   const items = [];
   document.querySelectorAll('.photo-grid').forEach(grid => {
     const group = grid.dataset.group || '';
@@ -248,5 +241,6 @@
 })();
 </script>
 
+<script src="nav.js" defer></script>
 </body>
 </html>
